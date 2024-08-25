@@ -32,27 +32,16 @@ namespace WindowsFormsApp1
             newContact.PhoneNumber = txt_phoneNumber.Text;
 
 
-            if (string.IsNullOrEmpty(selectedId))
+            if (selectedId != "")
             {
-
-                newContact.Id = Guid.NewGuid();
-                contacts.Add(newContact);
-            }
-            else
-            {
-                var contactForEdit = contacts.FirstOrDefault(x => x.Id.ToString() == selectedId);
-                contacts.Remove(contactForEdit);
                 newContact.Id = Guid.Parse(selectedId);
-                contacts.Add(newContact);
-                selectedId = "";
             }
 
-
-
-            var saveResult = _service.SaveContact(contacts);
+            var saveResult = _service.SaveContact(newContact);
+            selectedId = "";
             if (saveResult)
             {
-                FillGridView(contacts);
+                FillGridView(_service.GetContacts());
             }
             clearForm();
         }
