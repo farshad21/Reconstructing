@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace Service
 {
@@ -57,7 +58,16 @@ namespace Service
         {
             var contacts = GetContacts();
 
+            foreach (PropertyInfo property in model.GetType().GetProperties())
+            {
+                object propertyValue = property.GetValue(model);
 
+                if (propertyValue == "")
+                {
+                    MessageBox.Show($"{property.Name} can not be empty\n"+"Please fill it", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
             if (model.Id == Guid.Empty)
             {
                 model.Id = Guid.NewGuid();
@@ -65,17 +75,45 @@ namespace Service
             }
             else
             {
-                var contactForEdit = GetContactById(model.Id.ToString());
-                if (contactForEdit!=null)
+                string contactId = model.Id.ToString();
+                var contactForEdit = contacts.FirstOrDefault(x => x.Id.ToString() == contactId);
+                if (contactForEdit != null)
                 {
                     contacts.Remove(contactForEdit);
                     contacts.Add(model);
                 }
-              
+
             }
 
 
             return _repo.SaveContact(contacts);
+
+
         }
+
+        //public bool SaveContact(Contact model)
+        //{
+        //    var contacts = GetContacts();
+
+
+        //    if (model.Id == Guid.Empty)
+        //    {
+        //        model.Id = Guid.NewGuid();
+        //        contacts.Add(model);
+        //    }
+        //    else
+        //    {
+        //        var contactForEdit = GetContactById(model.Id.ToString());
+        //        if (contactForEdit!=null)
+        //        {
+        //            contacts.Remove(contactForEdit);
+        //            contacts.Add(model);
+        //        }
+
+        //    }
+
+
+        //    return _repo.SaveContact(contacts);
+        //}
     }
 }
