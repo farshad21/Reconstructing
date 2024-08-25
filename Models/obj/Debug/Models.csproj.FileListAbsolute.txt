@@ -1,0 +1,6 @@
+C:\Users\MD\source\repos\WindowsFormsApp1\Models\bin\Debug\Models.dll
+C:\Users\MD\source\repos\WindowsFormsApp1\Models\bin\Debug\Models.pdb
+C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.dll
+C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.pdb

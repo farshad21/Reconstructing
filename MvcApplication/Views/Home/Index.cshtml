@@ -1,0 +1,119 @@
+﻿@*@model System.Collections.Generic.List<Models.Contact>*@
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<form id="contactForm">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="firstname">Firstname</label>
+            <input class="form-control" type="text" id="firstname" value="" />
+        </div>
+        <div class="col-md-4">
+            <label for="lastname">Lastname</label>
+            <input class="form-control" type="text" id="lastname" value="" />
+        </div>
+        <div class="col-md-4">
+            <label for="phoneNumber">Phone Number</label>
+            <input class="form-control" type="text" id="phoneNumber" value="" />
+        </div>
+    </div>
+    <input hidden id="hiddenId" />
+</form>
+<div class="mt-5">
+    <button class="btn btn-success" onclick="Save()">Save</button>
+</div>
+<table class="table table-response ">
+    <thead>
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>phone number</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody id="tbl_contactBody" name="tbl_contactBody" class="customTabel">
+    </tbody>
+</table>
+
+<script>
+
+    GetContacts();
+    function ClearForm() {
+        document.getElementById('contactForm').reset();
+    }
+
+
+    function GetContacts() {
+
+        var url = '/PhoneBook/GetContacts'
+
+        $.get(url, function (mehdi) {
+            var html = '';
+
+            for (var i = 0; i < mehdi.length; i++) {
+                html += '<tr>'
+                html += '<td>' + mehdi[i].Firstname + '</td>'
+                html += '<td>' + mehdi[i].Lastname + '</td>'
+                html += '<td>' + mehdi[i].PhoneNumber + '</td>'
+                html += '<td>';
+                html += '<div class="btn-group">';
+                html += '<button class="btn btn-primary" onclick="GetContactById(' + "'" + mehdi[i].Id + "'" +')"> edit</button>';
+                html += '<button class="btn btn-danger" onclick="Delete(' + "'" + mehdi[i].Id + "'" +')"> delete</button>';
+                html += '</div>';
+                html += '</td>';
+
+
+                + mehdi[i].PhoneNumber + '</td>'
+                html += '</tr>'
+            }
+
+            $('#tbl_contactBody').html(html);
+
+        })
+    }
+
+    function GetContactById(Id) {
+        debugger;
+        var url = '/PhoneBook/GetContactById/' + Id;
+
+        $.get(url, function (result) {
+            $('#firstname').val(result.Firstname)
+            $('#lastname').val(result.Lastname)
+            $('#phoneNumber').val(result.PhoneNumber)
+            $('#hiddenId').val(result.Id)
+
+
+        })
+    }
+
+
+
+    function Save() {
+        var url = '/PhoneBook/Save'
+      
+        var model = {};
+        model.Firstname = $('#firstname').val();
+        model.Lastname = $('#lastname').val();
+        model.PhoneNumber = $('#phoneNumber').val();
+        model.Id = $('#hiddenId').val();
+        $.post(url, {model:model},function (result) {
+            debugger
+            GetContacts();
+            ClearForm();
+        })
+    }
+
+
+    function Delete(id) {
+        var url = '/PhoneBook/DeleteById/' + id
+
+        $.get(url, function (result) {
+            GetContacts();
+
+        })
+    }
+
+
+</script>

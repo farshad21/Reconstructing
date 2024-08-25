@@ -1,0 +1,11 @@
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\bin\Debug\Repository.dll
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\bin\Debug\Repository.pdb
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\bin\Debug\Models.dll
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\bin\Debug\Models.pdb
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.dll
+C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.pdb
