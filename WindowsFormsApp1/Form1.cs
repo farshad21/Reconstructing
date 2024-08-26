@@ -1,7 +1,5 @@
 ﻿using Models;
-
-using Service;
-
+using DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,18 +17,13 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
-
             var contacts = _service.GetContacts();
-
             var newContact = new Contact();
             newContact.Firstname = txt_firstname.Text;
             newContact.Lastname = txt_lastname.Text;
             newContact.PhoneNumber = txt_phoneNumber.Text;
-
 
             if (selectedId != "")
             {
@@ -53,10 +46,6 @@ namespace WindowsFormsApp1
             FillGridView(contacts);
         }
 
-
-
-
-
         public void FillGridView(List<Contact> model)
         {
 
@@ -67,7 +56,6 @@ namespace WindowsFormsApp1
             }
 
         }
-
 
         public void clearForm()
         {
@@ -96,8 +84,6 @@ namespace WindowsFormsApp1
             {
 
             }
-
-
         }
 
         private void grd_contacts_CancelRowEdit(object sender, QuestionEventArgs e)

@@ -1,7 +1,5 @@
 ﻿using Models;
-
-using DataLayer;
-
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
