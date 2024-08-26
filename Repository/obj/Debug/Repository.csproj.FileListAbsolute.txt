@@ -9,3 +9,14 @@ C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.csproj
 C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.csproj.CopyComplete
 C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.dll
 C:\Users\MD\source\repos\WindowsFormsApp1\Repository\obj\Debug\Repository.pdb
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\bin\Debug\Repository.dll
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\bin\Debug\Repository.pdb
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\bin\Debug\Models.dll
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\bin\Debug\Models.pdb
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\obj\Debug\Repository.dll
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Repository\obj\Debug\Repository.pdb

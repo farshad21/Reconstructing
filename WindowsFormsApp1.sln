@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34221.43
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{77A83E52-7789-4673-9413-5663A16DB3B7}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6B6D6603-B2C9-41D2-B728-381E029FAC81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "MvcApplication\MvcApplication.csproj", "{869C2731-83C7-4FBA-98B9-D52719565E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{56AA9D13-383E-4B7F-9701-F8448ABC7FB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{869C2731-83C7-4FBA-98B9-D52719565E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{869C2731-83C7-4FBA-98B9-D52719565E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{869C2731-83C7-4FBA-98B9-D52719565E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AA9D13-383E-4B7F-9701-F8448ABC7FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AA9D13-383E-4B7F-9701-F8448ABC7FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AA9D13-383E-4B7F-9701-F8448ABC7FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AA9D13-383E-4B7F-9701-F8448ABC7FB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

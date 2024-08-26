@@ -4,3 +4,9 @@ C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.csproj.Assembl
 C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.dll
 C:\Users\MD\source\repos\WindowsFormsApp1\Models\obj\Debug\Models.pdb
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Models\bin\Debug\Models.dll
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Models\bin\Debug\Models.pdb
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Models\obj\Debug\Models.dll
+C:\Users\AVA\Desktop\New folder (5)\BehsaBootCampProject\Models\obj\Debug\Models.pdb
